@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Replace with a cool font later */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: white;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between header, body, and footer */
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #98a886; /* Sage green background for header */
+    height: 150px; /* Increased height of the green bar */
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+  }
+  
+  header h1 {
+    font-size: 3.5rem; /* Slightly larger font size */
+    font-family: 'Georgia', serif; /* Replace with a cool font later */
+    margin: 0;
+    color: black; /* Title text color */
+  }
+  
+  /* Main Body Section */
+  main {
+    flex: 1; /* Allow main to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center-align text */
+  }
+  
+  main h2 {
+    font-size: 4.5rem; /* Increased font size for main text */
+    font-family: 'Georgia', serif; /* Replace with a cool font later */
+    color: black;
+    margin-bottom: 20px;
+    line-height: 1.5; /* Adjust this value for tighter or looser spacing */
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #98a886; /* Sage green color */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.5rem; /* Increased button text size */
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #7c9473; /* Slightly darker green for hover */
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #f0c600; /* Deep yellow color */
+    padding: 15px 0; /* More padding for a thicker bar */
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  /* Responsive Design */
+@media (max-width: 768px) {
+    /* For tablets and small screens */
+    header {
+      height: 120px; /* Slightly smaller header height */
+    }
+  
+    header h1 {
+      font-size: 2.5rem; /* Reduce title font size */
+    }
+  
+    main h2 {
+      font-size: 2.5rem; /* Reduce body text font size */
+    }
+  
+    .cta-button {
+      font-size: 1.2rem; /* Smaller button text */
+      padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+  
+    footer {
+      font-size: 0.8rem; /* Smaller footer text */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* For very small screens (phones) */
+    header {
+      height: 100px; /* Reduce header height further */
+    }
+  
+    header h1 {
+      font-size: 2rem; /* Further reduce title font size */
+    }
+  
+    main h2 {
+      font-size: 2rem; /* Further reduce body text font size */
+    }
+  
+    .cta-button {
+      font-size: 1rem; /* Smaller button text */
+      padding: 8px 15px; /* Compact padding for mobile */
+    }
+  
+    footer {
+      font-size: 0.7rem; /* Reduce footer text size */
+    }
+  }
